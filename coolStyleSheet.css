@@ -1,0 +1,302 @@
+html {
+	font-family: "verdana", "arial", sans-serif;	
+}
+body {
+	background-color: #D6F2FF;
+}
+body::after{
+	background: url(psy.jpg);
+	opacity: 0.8;
+	content: "";
+	opacity: 0.2;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;  
+}
+
+.descriptor{
+ font-size: 1.17em;
+ margin:2px;
+}
+
+h3 { 
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+#top {
+
+}
+
+#logo {
+	margin-left: 50%;
+	margin-top: 2px;
+	top: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#icon {
+opacity: 0.1;
+width: 10px;
+height: 10px;
+}
+
+#icon:hover{opacity: 1;}
+
+.dog {
+	background-color: #7EC5F6;
+	border-radius: 25px;
+	box-shadow: 0px 0px 25px 3px #0047BB;
+	opacity: 0.9;
+	
+}
+.dog:hover {box-shadow: 0px 0px 25px 3px red;}
+
+
+
+#navbar {
+	width: 64vw;
+	height: 30px;
+	margin-left: 18vw;
+	margin-top: 10vh;
+}
+
+#nav {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.buttons {
+	margin: 0px;
+	margin-right: 3px;
+	padding: 0px;
+	border-radius: 12px;	
+	width: 32%;
+	text-align: center;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border: 3px solid #0047BB;
+    box-sizing: border-box;
+	background-color: #7EC5F6;
+	float: left;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+
+
+@media (max-width: 800px) {
+	.buttons {font-size: 12px;}
+}
+
+
+
+#content {
+	width: 60vw;
+	height: 1420px;
+	margin-left: 20vw;
+	margin-top: 10vh;
+}
+
+#info {
+	width: 60vw;
+	height: 450px;
+	margin-left: 20vw;
+	margin-top: 10vh;
+}
+
+.item {
+margin: 60px;
+padding: 20px;
+}
+
+.itemImg {
+	border: 3px solid #804000;
+	border-radius: 5px;
+	margin: 10px 10px 0px 0px;
+}
+
+#img1 {
+	width: 240px;
+	height: 240px;
+	
+}
+
+#img2 {
+	width: 200px;
+	height: 150px;
+}
+
+#img3 {
+	width: 250px;
+	height: 250px;
+}
+
+
+
+.ImgSpan {
+	float: right;
+}
+
+.item {
+margin: 30px 10px 10px 20px;
+}
+
+#detailInput{
+display: none;
+}
+
+button{
+	padding: 10px 25px;
+	border-radius: 4px;
+	position: absolute;
+    
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+}
+button:hover{
+border: 1px solid red;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#submit {
+	padding: 10px 25px;
+	border-radius: 4px;
+	position: absolute;
+    
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+}
+#submit:hover{
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#discount{
+margin-left: 20px;
+}
+
+#fieldsetdesc {
+color: red;
+font-size: 70%;
+}
+.label::after {
+	content: url(required.png);
+}
+
+fieldset {
+	border-radius: 6px;
+	margin: 2px 20px 2px 20px;
+}
+
+input:required:invalid, input:focus:invalid {
+    background-image: url(invalid.png);
+	background-position: right top;
+    background-repeat: no-repeat;
+	box-shadow: 2px 2px 2px red;
+	border-radius: 6px;
+}
+input:required:valid {
+    background-image: url(valid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+	box-shadow: 2px 2px 2px green;
+	border-radius: 6px;
+}
+  
+footer{
+background-color: gray;
+opacity: 0.5;
+margin: 0px;
+}
+
+#contactdetails {
+right: 10px;
+position: absolute;
+padding:20px;
+padding-right: 80px;
+}
+
+#address{
+position: absolute;
+left: 10px;
+padding: 20px;
+padding-left: 80px;
+}
+
+#about{
+margin: 30px;
+padding: 5px;
+}
+
+h3{
+right: 20%;
+position: absolute;
+padding: 20px;
+padding-right: 80px;
+}
+
+#hasDog{
+
+border-radius: 50%;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.boxcheck {
+	width: 25px;
+	margin: 5px;
+	position: relative;
+}
+
+.boxcheck label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+  	left: 0;
+	background: #eeeeee;
+	border:1px solid #ddd;
+}
+.boxcheck label:after {
+	opacity: 0.2;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 7px;
+	border: 3px solid #333333;
+	border-top: none;
+	border-right: none;
+
+	transform: rotate(-45deg);
+}
+
+.boxcheck input[type=checkbox]:checked + label {
+	background: #26ca26;
+}
+
+.boxcheck label:hover::after {
+	opacity: 0.5;
+}
+
+.boxcheck input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+

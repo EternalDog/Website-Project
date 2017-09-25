@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+<!--Dominik Bahrynowski-->
+<!--R00137275-->
+	<title>IWD assignment</title>
+	<meta charset="utf-8">
+	<link href ="coolStyleSheet.css" rel ="stylesheet">
+</head>
+<body>
+<script type="text/javascript" src="coolJavaScript.js"></script>
+<img src="icon.png" alt="dog icon" id="icon">
+<div id="top">
+<img src="DOGLOGO.png" alt="dog logo" id="logo">
+</div>
+	<div id="navbar">
+		<ul id="nav">			
+			<a href="index.html"><li class="buttons">Catalog</li></a>
+			<a href="about.html"><li class="buttons">About us</li></a>
+			<a href="contact.html"><li class="buttons">Contact us</li></a>
+		</ul>
+	</div>
+<!-- -->
+<div id="content" class="dog">
+	<form action="http://atlantis.cit.ie/displayvalues.php">
+		<div id="item1" class="item">
+			<span class="ImgSpan">
+			<img class="itemImg" id="img1" src="item1.jpg" alt="dog"><br> </span>
+			<!-- All names are made up -->
+			<h2> "The Auspicious Labrador", by Adam Markiel </h2>
+			<span class="descriptor">Quantity:</span>
+			<select id="item1q" onchange="item1function()">
+				<option value="0">0 </option>
+				<option value="1">1 </option>
+				<option value="2">2 </option>
+				<option value="3">3 </option>
+			</select><br>
+			
+			<p class="descriptor">Size: </p>
+
+			<input type="radio" name="size1" id="s1s" value="small" onchange="item1function()"> 300mm X 300mm <br>
+			<input type="radio" name="size1" id="s1m" value="medium" onchange="item1function()" checked> 500mm X 500mm <br>
+			<input type="radio" name="size1" id="s1l" value="big" onchange="item1function()"> 700mm X 700mm<br>
+			
+			<p class="descriptor">Effects: </p>
+			<span> Curcular image:</span>
+			<div class="boxcheck">
+			<input type="checkbox" name="Img1circle" id="f1a" value="circle" onchange="item1function()"><label for="f1a"></label></div>
+			<span> Blur:</span>
+			<div class="boxcheck">
+			<input type="checkbox" name="Img1Blur" id="f1b" value="blur" onchange="item1function()"><label for="f1b"></label></div> 
+			
+			<span class="descriptor" id="price1">Price: 100 </span>
+
+		</div>
+		
+		
+		
+		<div id="item2" class="item">
+			<span class="ImgSpan">
+			<img class="itemImg" id="img2" src="item2.jpg" alt="dog"><br> </span>
+			<h2> "Brenhinol Corgwn", by Owen Rodrick  </h2>
+			<span class="descriptor">Quantity:</span>
+			<select id="item2q" onchange="item2function()">
+				<option value="0">0 </option>
+				<option value="1">1 </option>
+				<option value="2">2 </option>
+			</select><br>
+			
+			<p class="descriptor">Size: </p>
+			<input type="radio" name="size2" id="s2s" value="small" onchange="item2function()"> 150mm X 200mm <br>
+			<input type="radio" name="size2" id="s2m" value="medium" onchange="item2function()" checked> 180mm X 220mm <br>
+			<input type="radio" name="size2" id="s2l" value="big" onchange="item2function()"> 200mm X 240mm
+			
+			<p class="descriptor">Effects: </p>
+			<span> Curcular image:</span>
+			<div class="boxcheck">
+			<input type="checkbox" name="Img2circle" id="f2a" value="circle" onchange="item2function()"><label for="f2a"></label></div> 
+			<span> Blur:</span>
+			<div class="boxcheck">		
+			<input type="checkbox" name="Img2Blur" id="f2b" value="blur" onchange="item2function()"><label for="f2b"></label></div> 
+			
+			<span class="descriptor" id="price2">Price: 130 </span>
+		</div>
+		
+		<div id="item3" class="item">
+			<span class="ImgSpan">
+			<img class="itemImg" id="img3" src="item3.jpg" alt="dog"><br> </span>
+			<h2> "The Three Colours of Happiness", by Emma Spence </h2>
+			<span class="descriptor">Quantity:</span>
+			<select id="item3q" onchange="item3function()">
+				<option value="0">0 </option>
+				<option value="1">1 </option>
+				<option value="2">2 </option>
+				<option value="3">3 </option>
+			</select><br>
+			
+			<p class="descriptor">Size: </p>
+			<input type="radio" name="size3" id="s3s" value="small" onchange="item3function()"> 280mm X 300mm <br>
+			<input type="radio" name="size3" id="s3m" value="medium" onchange="item3function()" checked> 460mm X 500mm <br>
+			<input type="radio" name="size3" id="s3l" value="big" onchange="item3function()"> 670mm X 700mm
+			
+			<p class="descriptor">Effects: </p>
+			<span> Curcular image:</span>
+			<div class="boxcheck">
+			<input type="checkbox" name="Img3circle" id="f3a" value="grayscale" onchange="item3function()"><label for="f3a"></label></div>
+			<span> Blur:</span>
+			<div class="boxcheck">		
+			<input type="checkbox" name="Img3Blur" id="f3b" value="blur" onchange="item3function()"><label for="f3b"></label></div> 
+			
+			<span class="descriptor" id="price3">Price: 220 </span>
+		</div>
+		
+		<div id="discount">
+			<p class="descriptor">Do you have a dog?<p>
+			<div class="boxcheck">
+				<input type="checkbox" value="1" id="hasDog" name="HasDog"/>
+				<label for="hasDog"></label><br>
+			</div>	
+			<p class="descriptor" id="fullPrice">Final price: 0<p>
+		</div><br>
+
+		<button type="button" id="continue" onclick="revealContent()">Continue</button> <br> <br>
+		<div id="detailInput"><fieldset>
+			<p id="fieldsetdesc"> All fields marked with an * are required. </p>
+			<p class="label">First name: </p>
+				<input type="text" id="t1" name="firstname" onblur="checkifempty();" required> <br>
+			<p class="label">Second name: </p>
+				<input type="text" id="t2" name="secondname" onblur="checkifempty();" required> <br>
+			<p class="label">Address: </p>
+				<input type="text" id="t3" name="Address" onblur="checkifempty();" required> <br>
+			<p class="label">City </p>
+				<input type="text" id="t7" name="city" onblur="checkifempty();" required> <br>
+			<p class="label">Phone number: </p>
+				<input type="tel" id="t4" name="phonenumber" onblur="checkifempty();" required> <br>
+			<p class="label">Card number: </p>
+				<input type="number" id="t5" name="cardnumber" onblur="checkifempty();" required> <br>
+			<p class="label">Email: </p>
+				<input type="email" id="t6" name="email" onblur="checkifempty();" required> <br>	
+			</fieldset><br><br>
+			<input type="submit" id="submit" value="Submit" disabled>
+		</div>	
+	</form>	
+</div><br>
+<footer>
+	<div id="address">
+		<p>Dogstreet 11 </p>
+		<p>Dogstown</p>
+		<p>Dog city</p>
+		<p>Co. Dog</p>
+	</div>
+	<div id="contactdetails"><br>
+		<p>Email:<a href = "mailto:genericemail@gmail.com">genericemail@gmail.com</a></p><br>
+		<!-- Presumably there is some sort of a program that can be used to call people, but I do not have one -->
+		<p>Phone Number:<a href="tel:0871231204">087 123 1204</a></p>
+	</div>
+</footer>
+</body>
+</html>
